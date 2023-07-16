@@ -1,0 +1,152 @@
+<!DOCTYPE html>
+<html lang="en" class="min-vh-100">
+    <head>
+        <meta charset="UTF-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <title>Akses dan Fasilitas - Geowisata Batuangus</title>
+        <link rel="apple-touch-icon" sizes="180x180" href="./assets/favicon/apple-touch-icon.png" />
+        <link rel="icon" type="image/png" sizes="32x32" href="./assets/favicon/favicon-32x32.png" />
+        <link rel="icon" type="image/png" sizes="16x16" href="./assets/favicon/favicon-16x16.png" />
+        <link rel="manifest" href="./assets/favicon/site.webmanifest" />
+        <!-- <link href="https://fonts.cdnfonts.com/css/holen-vintage" rel="stylesheet" /> -->
+        <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Space+Mono" />
+        <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Roboto+Mono" />
+        <link rel="stylesheet" href="./assets/style.css" />
+
+        <!-- Bootstrap -->
+        <link
+            href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css"
+            rel="stylesheet"
+            integrity="sha384-9ndCyUaIbzAi2FUVXJi0CjmCapSmO7SnpJef0486qhLnuZ2cdeRhO02iuK6FUUVM"
+            crossorigin="anonymous"
+        />
+        <script
+            src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"
+            integrity="sha384-geWF76RCwLtnZ8qwWowPQNguL3RmwHVBC9FhGdlKrxdiJJigb/j/68SIy3Te4Bkz"
+            crossorigin="anonymous"
+        ></script>
+
+        <!-- Leaflet -->
+        <link
+            rel="stylesheet"
+            href="https://unpkg.com/leaflet@1.9.4/dist/leaflet.css"
+            integrity="sha256-p4NxAoJBhIIN+hmNHrzRCf9tD/miZyoHS5obTRR9BMY="
+            crossorigin=""
+        />
+        <!-- Make sure you put this AFTER Leaflet's CSS -->
+        <script
+            src="https://unpkg.com/leaflet@1.9.4/dist/leaflet.js"
+            integrity="sha256-20nQCchB9co0qIjJZRGuk2/Z9VM+kNiyxNV1lvTlZBo="
+            crossorigin=""
+        ></script>
+
+        <style>
+            #map {
+                height: 250px;
+            }
+        </style>
+
+        <script src="https://unpkg.com/feather-icons"></script>
+    </head>
+
+    <body>
+        <header>
+            <nav class="navbar navbar-expand-lg bg-body-tertiary">
+                <div class="container">
+                    <a class="navbar-brand" href="./index.html"
+                        ><img class="ternate-logo" src="./assets/img/Logo Ternate.webp" alt="Logo Ternate" /> Geowisata Batuangus</a
+                    >
+                    <button
+                        class="navbar-toggler"
+                        type="button"
+                        data-bs-toggle="collapse"
+                        data-bs-target="#navbarSupportedContent"
+                        aria-controls="navbarSupportedContent"
+                        aria-expanded="false"
+                        aria-label="Toggle navigation"
+                    >
+                        <span class="navbar-toggler-icon"></span>
+                    </button>
+                    <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                        <ul class="navbar-nav ms-auto mb-2 mb-lg-0">
+                            <li class="nav-item">
+                                <a class="nav-link" href="./index.html">Beranda</a>
+                            </li>
+                            <li class="nav-item dropdown">
+                                <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                                    Menu
+                                </a>
+                                <ul class="dropdown-menu dropdown-menu-end">
+                                    <li><a class="dropdown-item" href="./subajou.html">Suba Jou</a></li>
+                                    <li><a class="dropdown-item" href="./akses_fasilitas.html">Fasilitas & Aksesibilitas</a></li>
+                                    <li><a class="dropdown-item" href="./lava.html">Jejak Lava & Geowisata Batuangus</a></li>
+                                    <li><a class="dropdown-item" href="./geosite.html">Deskripsi Objek Geosite</a></li>
+                                    <li><a class="dropdown-item" href="./roadmap.html">Roadmap Menuju Geopark Nasional</a></li>
+                                </ul>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link" href="./tentang.html">Tentang</a>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+            </nav>
+        </header>
+
+        <div class="container text-light py-5">
+            <div id="map" class="mb-3"></div>
+            <div class="row">
+                <div class="col-lg-6 col-sm-12 mb-3">
+                    <h1 class="fw-bold mb-3 text-uppercase text-warning">Fasilitas</h1>
+                    <ol>
+                        <li>Jalur Wisata</li>
+                        <li>Parkiran</li>
+                        <li>Toilet</li>
+                        <li>Musholah</li>
+                        <li>Gazebo</li>
+                        <li>Pendopo</li>
+                        <li>Panggung</li>
+                    </ol>
+                </div>
+                <div class="col-lg-6 col-sm-12">
+                    <h1 class="fw-bold mb-3 text-uppercase text-warning">Aksesibilitas</h1>
+                    <p>
+                        Batu Angus dapat diakses dengan kendaraan umum dari Kota Ternate. Jarak tempuh dari pusat kota ke Batu Angus sekitar
+                        9 kilometer dengan estimasi 25 menit perjalanan. Wisatawan juga dapat menggunakan angkutan umum atau ojek untuk
+                        menuju Batu Angus.
+                    </p>
+                    <p>
+                        Akses yang sangat mudah dan murah, menjadikan Batuangus lebih istimewa,dapat di tempuh dengan kendaraan roda dua dan
+                        roda empat dengan estimasi 10- 15 menit para geowisatawan akan tiba di gerbang batuangus. Biaya transportaasi roda
+                        dua Rp 20.000 sekali jalan dan roda empat Rp 50.000 - 75.000 sekali jalan
+                    </p>
+                </div>
+            </div>
+        </div>
+
+        <footer class="text-bg-light d-flex justify-content-center py-1">
+            <small class="text-center">&copy; Geowisata Batuangus Ternate. All Rights Reserved 2023</small>
+        </footer>
+
+        <script>
+            feather.replace();
+        </script>
+        <script>
+            var map = L.map("map").setView([0.8464784, 127.3654112], 13);
+
+            L.tileLayer("https://tile.openstreetmap.org/{z}/{x}/{y}.png", {
+                maxZoom: 200,
+                attribution: '&copy; <a href="https://www.openstreetmap.org/copyright">OpenStreetMap</a> contributors',
+            }).addTo(map);
+
+            L.marker([0.8464784, 127.3654112]).addTo(map).bindPopup("<strong class='text-center'>Geowisata Batuangus</strong>").openPopup();
+
+            var circle = L.circle([0.8464784, 127.3654112], {
+                color: "red",
+                fillColor: "#f03",
+                fillOpacity: 0.5,
+                radius: 500,
+            }).addTo(map);
+        </script>
+    </body>
+</html>
