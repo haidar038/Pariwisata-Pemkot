@@ -14,31 +14,13 @@
         <link rel="stylesheet" href="./assets/style.css" />
 
         <!-- Bootstrap -->
-        <link
-            href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css"
-            rel="stylesheet"
-            integrity="sha384-9ndCyUaIbzAi2FUVXJi0CjmCapSmO7SnpJef0486qhLnuZ2cdeRhO02iuK6FUUVM"
-            crossorigin="anonymous"
-        />
-        <script
-            src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"
-            integrity="sha384-geWF76RCwLtnZ8qwWowPQNguL3RmwHVBC9FhGdlKrxdiJJigb/j/68SIy3Te4Bkz"
-            crossorigin="anonymous"
-        ></script>
+        <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-9ndCyUaIbzAi2FUVXJi0CjmCapSmO7SnpJef0486qhLnuZ2cdeRhO02iuK6FUUVM" crossorigin="anonymous" />
+        <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js" integrity="sha384-geWF76RCwLtnZ8qwWowPQNguL3RmwHVBC9FhGdlKrxdiJJigb/j/68SIy3Te4Bkz" crossorigin="anonymous"></script>
 
         <!-- Leaflet -->
-        <link
-            rel="stylesheet"
-            href="https://unpkg.com/leaflet@1.9.4/dist/leaflet.css"
-            integrity="sha256-p4NxAoJBhIIN+hmNHrzRCf9tD/miZyoHS5obTRR9BMY="
-            crossorigin=""
-        />
+        <link rel="stylesheet" href="https://unpkg.com/leaflet@1.9.4/dist/leaflet.css" integrity="sha256-p4NxAoJBhIIN+hmNHrzRCf9tD/miZyoHS5obTRR9BMY=" crossorigin="" />
         <!-- Make sure you put this AFTER Leaflet's CSS -->
-        <script
-            src="https://unpkg.com/leaflet@1.9.4/dist/leaflet.js"
-            integrity="sha256-20nQCchB9co0qIjJZRGuk2/Z9VM+kNiyxNV1lvTlZBo="
-            crossorigin=""
-        ></script>
+        <script src="https://unpkg.com/leaflet@1.9.4/dist/leaflet.js" integrity="sha256-20nQCchB9co0qIjJZRGuk2/Z9VM+kNiyxNV1lvTlZBo=" crossorigin=""></script>
 
         <style>
             #map {
@@ -53,18 +35,8 @@
         <header>
             <nav class="navbar navbar-expand-lg bg-body-tertiary">
                 <div class="container">
-                    <a class="navbar-brand" href="./index.html"
-                        ><img class="ternate-logo" src="./assets/img/Logo Ternate.webp" alt="Logo Ternate" /> Geowisata Batuangus</a
-                    >
-                    <button
-                        class="navbar-toggler"
-                        type="button"
-                        data-bs-toggle="collapse"
-                        data-bs-target="#navbarSupportedContent"
-                        aria-controls="navbarSupportedContent"
-                        aria-expanded="false"
-                        aria-label="Toggle navigation"
-                    >
+                    <a class="navbar-brand" href="./index.html"><img class="ternate-logo" src="./assets/img/Logo Ternate.webp" alt="Logo Ternate" /> Geowisata Batuangus</a>
+                    <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
                         <span class="navbar-toggler-icon"></span>
                     </button>
                     <div class="collapse navbar-collapse" id="navbarSupportedContent">
@@ -73,9 +45,7 @@
                                 <a class="nav-link" href="./index.html">Beranda</a>
                             </li>
                             <li class="nav-item dropdown">
-                                <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
-                                    Menu
-                                </a>
+                                <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false"> Menu </a>
                                 <ul class="dropdown-menu dropdown-menu-end">
                                     <li><a class="dropdown-item" href="./subajou.html">Suba Jou</a></li>
                                     <li><a class="dropdown-item" href="./akses_fasilitas.html">Fasilitas & Aksesibilitas</a></li>
@@ -98,7 +68,7 @@
             <div class="row">
                 <div class="col-lg-6 col-sm-12 mb-3">
                     <h1 class="fw-bold mb-3 text-uppercase text-warning">Fasilitas</h1>
-                    <ol>
+                    <ol class="basic-text">
                         <li>Jalur Wisata</li>
                         <li>Parkiran</li>
                         <li>Toilet</li>
@@ -110,16 +80,16 @@
                 </div>
                 <div class="col-lg-6 col-sm-12">
                     <h1 class="fw-bold mb-3 text-uppercase text-warning">Aksesibilitas</h1>
-                    <p>
-                        Batu Angus dapat diakses dengan kendaraan umum dari Kota Ternate. Jarak tempuh dari pusat kota ke Batu Angus sekitar
-                        9 kilometer dengan estimasi 25 menit perjalanan. Wisatawan juga dapat menggunakan angkutan umum atau ojek untuk
-                        menuju Batu Angus.
-                    </p>
-                    <p>
-                        Akses yang sangat mudah dan murah, menjadikan Batuangus lebih istimewa,dapat di tempuh dengan kendaraan roda dua dan
-                        roda empat dengan estimasi 10- 15 menit para geowisatawan akan tiba di gerbang batuangus. Biaya transportaasi roda
-                        dua Rp 20.000 sekali jalan dan roda empat Rp 50.000 - 75.000 sekali jalan
-                    </p>
+                    <div class="basic-text">
+                        <p>
+                            Batu Angus dapat diakses dengan kendaraan umum dari Kota Ternate. Jarak tempuh dari pusat kota ke Batu Angus sekitar 9 kilometer dengan estimasi 25 menit perjalanan. Wisatawan juga dapat menggunakan angkutan umum
+                            atau ojek untuk menuju Batu Angus.
+                        </p>
+                        <p>
+                            Akses yang sangat mudah dan murah, menjadikan Batuangus lebih istimewa,dapat di tempuh dengan kendaraan roda dua dan roda empat dengan estimasi 10- 15 menit para geowisatawan akan tiba di gerbang batuangus. Biaya
+                            transportaasi roda dua Rp 20.000 sekali jalan dan roda empat Rp 50.000 - 75.000 sekali jalan
+                        </p>
+                    </div>
                 </div>
             </div>
         </div>
